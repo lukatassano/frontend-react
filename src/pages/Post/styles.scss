@@ -1,0 +1,44 @@
+.post-background {
+  display: flex;
+  flex: 1;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+
+  .post-container {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    height: auto;
+    width: 60vw;
+    background-color: #fff;
+    border-radius: 8px;
+    
+    .post-title {
+      margin: 50px 0;
+
+      h2 {
+
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .post-body {
+      
+      
+      h2 {
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
