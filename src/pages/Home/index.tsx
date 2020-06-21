@@ -15,8 +15,8 @@ const App: React.FC = () => {
 
   const history = useHistory();
 	
-	const [posts, setPosts] = useState([])
-	const [page, setPage] = useState(1)
+	const [posts, setPosts] = useState<Post[]>([])
+	const [page, setPage] = useState<number>(1)
 
 	useEffect(() => {
 		const token = 'vyNPiyGpmcuhD4NFtK7GkfV77_YJmLmS0N_O'
