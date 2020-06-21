@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FormEvent } from 'react'
+import React, { useState, useEffect } from 'react'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md"
 import { useHistory } from "react-router-dom";
 
@@ -33,7 +33,7 @@ const App: React.FC = () => {
 		}
   }
   
-  function handleContent( post: Post) {
+  function handleContent( post: Post ) {
     localStorage.setItem('postTitle', post.title);
     localStorage.setItem('postBody', post.body);
     history.push('/post')
@@ -61,9 +61,9 @@ const App: React.FC = () => {
 						
 						<div className="pages">
 							<MdKeyboardArrowLeft className={page === 1 ? "block" : "arrow"} size={30} onClick={() => handlePage(page - 1)} />
-							<a className="selected" onClick={() => setPage(page)}><h4>{page}</h4> </a>
-							<a onClick={() => setPage(page + 1)}><h4>{page + 1}</h4> </a>
-							<a onClick={() => setPage(page + 2)}><h4>{page + 2}</h4> </a>
+							<button className="selected" onClick={() => setPage(page)}><h4>{page}</h4> </button>
+							<button onClick={() => setPage(page + 1)}><h4>{page + 1}</h4> </button>
+							<button onClick={() => setPage(page + 2)}><h4>{page + 2}</h4> </button>
 							<MdKeyboardArrowRight className="arrow" size={30} onClick={() => handlePage(page + 1)} />
 						</div>
 					</div>
